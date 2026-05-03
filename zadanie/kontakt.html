@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymZone - kontakt</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="hlavicka">
+      <h1>GymZone</h1>
+      <ul id="menu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="treningy.html">Treningy</a></li>
+        <li><a href="jedalnicek.html">Plan</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+        <li><a class="aktivne" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="obsah">
+      <div class="box">
+        <h2>Kontakt / registracia na skusobny trening</h2>
+        <p>Vypln kratky formular a ozveme sa s terminom.</p>
+      </div>
+
+      <div class="box">
+        <p id="form-ok" class="ok">Sprava bola pripravena na odoslanie.</p>
+        <form id="contact-form" action="#" method="get" novalidate>
+          <p>
+            <label for="name">Meno:</label><br />
+            <input type="text" id="name" name="name" minlength="2" required />
+            <span id="errName" class="chyba"></span>
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+            <span id="errEmail" class="chyba"></span>
+          </p>
+
+          <p>
+            <label for="goal">Ciel:</label><br />
+            <select id="goal" name="goal" required>
+              <option value="">-- vyber --</option>
+              <option value="sila">viac sily</option>
+              <option value="svaly">nabrat svaly</option>
+              <option value="chudnutie">schudnut</option>
+              <option value="kondicia">kondicia</option>
+            </select>
+            <span id="errGoal" class="chyba"></span>
+          </p>
+
+          <p>
+            <label for="date">Datum treningu:</label><br />
+            <input type="date" id="date" name="date" required />
+            <span id="errDate" class="chyba"></span>
+          </p>
+
+          <p>Typ treningu:</p>
+          <p>
+            <label><input type="radio" name="trainingType" value="fitko" /> fitko</label><br />
+            <label><input type="radio" name="trainingType" value="kardio" /> kardio</label><br />
+            <label><input type="radio" name="trainingType" value="osobny" /> osobny trener</label>
+            <span id="errType" class="chyba"></span>
+          </p>
+
+          <p>
+            <label for="message">Sprava:</label><br />
+            <textarea id="message" name="message" required minlength="15"></textarea>
+            <span id="errMsg" class="chyba"></span>
+          </p>
+
+          <p>
+            <label><input type="checkbox" id="terms" name="terms" required /> suhlasim so spracovanim udajov</label>
+            <span id="errTerms" class="chyba"></span>
+          </p>
+
+          <p>
+            <button type="submit">Odoslat</button>
+            <button type="reset">Vymazat</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="patka">GymZone <span id="rok"></span></div>
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+  </body>
+</html>

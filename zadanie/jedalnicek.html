@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymZone - plan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="hlavicka">
+      <h1>GymZone</h1>
+      <ul id="menu">
+        <li><a href="index.html">Domov</a></li>
+        <li><a href="treningy.html">Treningy</a></li>
+        <li><a class="aktivne" href="jedalnicek.html">Plan</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="obsah">
+      <div class="box">
+        <h2>Treningovy plan</h2>
+        <p>
+          Vyber cvikov pre zaciatocnikov a mierne pokrocilych. Plan je rozdeleny podla dni,
+          aby sa lahsie drzala pravidelnost.
+        </p>
+        <p id="ajax-status">Plan sa pripravuje...</p>
+        <button class="skryte" type="button" id="load-data">Zobrazit plan</button>
+      </div>
+
+      <div class="box">
+        <h3>Rozpis cvikov</h3>
+        <div style="overflow-x: auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Program</th>
+                <th>Tyzd.</th>
+                <th>Den</th>
+                <th>Cvik</th>
+                <th>Serie</th>
+                <th>Opak.</th>
+                <th>Poznamka</th>
+              </tr>
+            </thead>
+            <tbody id="data-body">
+              <tr>
+                <td colspan="7">Plan sa pripravuje...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="patka">GymZone <span id="rok"></span></div>
+    <script src="js/main.js"></script>
+    <script src="js/ajax-table.js"></script>
+  </body>
+</html>

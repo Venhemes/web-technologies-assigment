@@ -1,0 +1,75 @@
+{
+  "portal": {
+    "name": "GymZone",
+    "author": "student WTD"
+  },
+  "programs": [
+    {
+      "id": "beginner-fullbody",
+      "name": "Full body zaciatocnik",
+      "weeks": [
+        {
+          "number": 1,
+          "days": [
+            {
+              "name": "Pondelok",
+              "exercises": [
+                { "name": "Leg press", "sets": 3, "reps": "10", "note": "lahsia vaha" },
+                { "name": "Bench press", "sets": 3, "reps": "8", "note": "s dopomocou" },
+                { "name": "Prítahy kladky", "sets": 3, "reps": "12", "note": "chrbat rovno" }
+              ]
+            },
+            {
+              "name": "Streda",
+              "exercises": [
+                { "name": "Drep s vlastnou vahou", "sets": 4, "reps": "12", "note": "technika" },
+                { "name": "Tlaky na ramena", "sets": 3, "reps": "10", "note": "jednorucky" },
+                { "name": "Plank", "sets": 3, "reps": "30s", "note": "brucho" }
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "days": [
+            {
+              "name": "Pondelok",
+              "exercises": [
+                { "name": "Drep", "sets": 3, "reps": "8", "note": "pomale opakovania" },
+                { "name": "Kliky", "sets": 3, "reps": "max", "note": "kolena ok" },
+                { "name": "Veslovanie", "sets": 3, "reps": "10", "note": "kontrola pohybu" }
+              ]
+            },
+            {
+              "name": "Piatok",
+              "exercises": [
+                { "name": "Rumunsky mrtvy tah", "sets": 3, "reps": "10", "note": "lahka tyc" },
+                { "name": "Biceps zdvih", "sets": 2, "reps": "12", "note": "nehojdat" },
+                { "name": "Triceps kladka", "sets": 2, "reps": "12", "note": "na konci" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conditioning",
+      "name": "Kondicny kruh",
+      "weeks": [
+        {
+          "number": 1,
+          "days": [
+            {
+              "name": "Utorok",
+              "exercises": [
+                { "name": "Bicykel", "sets": 1, "reps": "10 min", "note": "zahriatie" },
+                { "name": "Battle rope", "sets": 4, "reps": "30s", "note": "pauza 30s" },
+                { "name": "Farmer walk", "sets": 3, "reps": "20m", "note": "pevny stred" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
