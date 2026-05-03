@@ -1,6 +1,6 @@
 # GymZone
 
-GymZone je tmavy web pre fitko s treningami, galeriou, cennikom, kontaktnym formularom a nacitanim dat z JSON suboru.
+GymZone je web pre fitko s treningami, galeriou, cennikom, kontaktnym formularom.
 
 ## Ako spustit web
 
